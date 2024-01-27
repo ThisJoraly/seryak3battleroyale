@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        html{
+        background-image: url(mobile-progs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        }
+        body{
+        margin: 0;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        background-image: url("background.png");
+        /* background: rgb(57,64,87);
+        background: linear-gradient(219deg, rgba(57,64,87,1) 0%, rgba(0,0,0,1) 50%, rgba(145,145,145,1) 100%);background-repeat: no-repeat; */
+        background-position: center;
+        }
+        h1{
+        margin-top: 0;
+        font-size: 30px;
+        }
+        h1, p{
+        color: #ffffff;
+        }
+        .header{
+        width: 100%;
+        min-width: 460px;
+        max-width: 960px;
+        margin: 0 auto 30px;
+        padding: 30px 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        }
+        .name_prof{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: #fff;
+        text-decoration: none;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        flex: none;
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        background-position: center;
+        width: 100%;
+        height: 50px;
+        }
+        .links{
+        margin: -5px 0 0 -5px;
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .links_background{
+        
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        margin: 5px 35px 0 5px;
+        justify-content: center;
+        align-items: center;
+            
+        }
+        .links_background:hover {
+        background-color: #fff;
+        }
+
+        .links_background:active {
+        background-color: whitesmoke;
+        }
+
+        .links_background:visited {
+        background-color: rgb(100, 75, 50);
+        }
+        .main{
+        width: 100%;
+        min-width: 460px;
+        max-width: 960px;
+        margin: auto;
+        flex: auto;
+        box-sizing: border-box;
+        }
+        .box{
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0 0 40px -50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        .box-base{
+        margin-left: 50px;
+        }
+        .box-side{
+        margin-left: 50px;
+        font: none;
+        }
+        .content{
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .banners{
+        flex: 1 1 300px;
+        }
+        .banner{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(180,124,152,1) 0%, rgba(100,137,183,1) 100%);
+        width: 100%;
+        min-width: 100px;
+        min-height: 200px;
+        font-size: 20px;
+        text-shadow: 1px 1px #555555;
+        color: #fff;
+        margin: 0 0 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .posts{
+        margin: 0 0 30px 30px;
+        flex: 1 1 400px;
+        }
+        .comments{
+        margin: 0 0 30px 30px;
+        display: flex;
+        }
+        .comment{
+        display: flex;
+        }
+        .comment-side{
+        padding-right: 20px;
+        flex: none;
+        }
+        .comment-base{
+        flex: auto;
+        }
+        .comment-avatar{
+        background: #FFA985;
+        width: 10px;
+        height: 10px;
+        }
+        .footer{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 100%;
+        max-width: 960px;
+        min-width: 460px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: #fff;
+        margin: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 15px;
+        text-shadow: 1px 1px #555555;
+        }
+        .h1d{
+            text-align: center;
+            font-size: 40px;
+            font-style: unset;      
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <a class="name_prof">
+                <p style="margin: 5px;">
+                DevOps-инженер
+                </p>
+                
+            </a>
+            <nav class="links">
+                <a href="#posts" class="links_background">Объяснение DevOps</a>
+                <a href="#comments" class="links_background">Основные знания в DevOps</a>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="box">
+                <div class="box-base">
+                    <h1 class="h1d">Кто такой DevOps?</h1>
+                    <p>DevOps описывают как идеологию, подход или набор методов. Это и процессы, и специальные технические решения, создающие внутри команды единую среду работы. Поэтому описывать методологию можно по-разному. Главное — цель: все перечисленное нужно, чтобы улучшить связь между разными специалистами IT-отдела</p>
+                </div>
+                <div class="box-side">
+                </div>
+            </div>
+            <div class="content">
+                <div class="banners">
+                    <div class="banner">
+                        <p style="color: #fff; margin-left: 10px;"><b>Задача DevOps-инженера:</b><br>
+                            > непосредственно писать код; <br>
+                            > настраивать рабочее окружение — виртуализацию, среды для разработки и тестирования продукта и так далее; <br>
+                            > автоматизировать процессы, которые отнимают лишнее время у разработчиков и администраторов; <br>
+                            > выстраивать процесс разработки так, чтобы это было эффективно и качественно; <br>
+                            > собирать разные «группы» работы над проектом воедино; <br>
+                            > внедрять DevOps-практики среди других специалистов. <br>
+                        </p>
+                    </div>
+                        <div class="banner">
+                            <p style="color: #fff; margin-left: 10px;"><b>Практики и инструменты методологии DevOps</b><br>
+                                > непрерывная интеграция, поставка и развертывание, или CI/CD;<br>
+                                > непрерывное тестирование;<br>
+                                > непрерывный мониторинг;<br>
+                                > микросервисы;<br>
+                                > инфраструктура как код, или IaC.<br>
+                            </p>
+                        </div>
+            </div>
+            <div class="posts"  id="posts">
+                <div class="post">
+                    <h1>Преимущества и недостатки работы DevOps-инженером</h1>
+
+                    <p>Преимущества:<br>
+
+                        ● востребованность - спрос на таких специалистов превышает предложение. По прогнозам IDC , к 2024 году число DevOps-инженеров вырастет вдвое, а полноценный цикл развития операций внедрит 30% компаний; <br>
+                        
+                        ● уровень дохода - заработок напрямую зависит от грейда, однако у экспертов в DevOps зарплата в среднем выше, чем у представителей других IT-профессий;<br>
+                        
+                        ● возможность всесторонне развиваться - работа позволяет погрузиться в широкий спектр технологий и постоянно осваивать новые.<br>
+                        <br><br>
+                        Недостатки:<br>
+                        
+                        ● ненормированный график - проблемы с софтом могут возникнуть в любое время, порой необходимо поработать ночью или в выходные;<br>
+                        
+                        ● сложность - профессия требует совмещать знания из разных предметных областей, что может быть сложно и даже пугающе (особенно на старте).<br>
+                        </p>
+                </div>
+            </div>
+            <div class="comments"  id="comments">
+                <div class="comment">
+                    <div class="comment-side">
+                        <div class="comment-avatar">
+                        </div>
+                    </div>
+                    <div class="comment-base">
+                        <h1 class="comment-title">Bash</h1>
+                        <p>Это скриптовый язык, который используется в Linux и Unix-системах. На нем пишут короткие программы для операционной системы. Он применяется для работы с файлами и папками, настройки системы и других задач. В DevOps-методологии язык полезен для автоматизации и конфигурирования: намного удобнее один раз запустить баш-скрипт, чем настраивать среду вручную.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-side">
+                        <div class="comment-avatar">
+                        </div>
+                    </div>
+                    <div class="comment-base">
+                        <h1 class="comment-title">Git</h1>
+                        <p>Это самая известная и популярная система контроля версий. Системы контроля версий позволяют работать с разными версиями кода как с сохранениями в игре, но гибче. Они «запоминают» состояние проекта в разные моменты времени, позволяют разделить его на «ветви», а потом слить воедино, дают возможность быстро и легко откатиться к прошлым версиям.
+
+                            С Git должны быть знакомы и разработчики — они регулярно взаимодействуют с этой системой, когда сохраняют код и отправляют его на проверку. Но задачи DevOps-инженера глубже: он отвечает за настройку, управление и контроль самой системы.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-side">
+                        <div class="comment-avatar">
+                        </div>
+                    </div>
+                    <div class="comment-base">
+                        <h1 class="comment-title">Docker/Kubernetes</h1>
+                        <p>Это популярная система, с помощью которой можно создавать контейнеры — виртуальные среды, где запускается какое-либо ПО. Использование контейнеров позволяет запустить продукт на любой машине: среда и зависимости, нужные для его работы, разворачиваются автоматически вместе с контейнером. Это удобно и позволяет изолировать среду, нужную для открытия продукта, от основной системы.
+                            Второе, что нужно для создания инфраструктуры после Docker, — системы оркестрации. Kubernetes — наиболее известная из них, используется чаще всего.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Предоставленная информация является выдумкой больной головы автора.</p>
+      
+       isip_a.v.hlebodarov@mpt.ru
+        </footer>
+    </div>
+    
+</body>
+</html>
